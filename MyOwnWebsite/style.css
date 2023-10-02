@@ -1,0 +1,482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+nav img {
+    width: 150px;
+    margin-left: -50px;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------Index HTML----------*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*----------Button HTML----------*/
+
+.buttonlink {
+    flex: 1;
+    text-align: right;
+}
+.buttonlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.buttonlink ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.buttonlink ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.buttonlink ul li:hover::after {
+    width: 100%;
+}
+
+/*---------TextBox HTML----------*/
+
+.textbox {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.textbox h1 {
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.textbox p {
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/*----------TextButton HTML----------*/
+
+.textbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.textbutton:hover {
+    border: 1px solid gold;
+    background-color: gold;
+    transition: 1s;
+}
+
+/*----------Brand HTML----------*/
+
+.brand{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.brand h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.brand p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.rows {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.brandcol {
+    flex-basis: 31%;
+    background: lightgoldenrodyellow;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: default;
+}
+.brandcol h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.brandcol:hover {
+    box-shadow: 0 0 20px 0px gold;
+}
+
+/*----------Eximage HTML----------*/
+
+.eximage {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.eximage h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------ImageCol HTML----------*/
+
+.imagecol {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.imagecol img {
+    width: 100%;
+    display: block;
+}
+
+/*----------Layer HTML----------*/
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500px;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+.layer:hover {
+    background: rgba(128, 128, 128,0.7);
+}
+
+/*----------Footer HTML----------*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+.footer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------About HTML----------*/
+
+.aboutheader {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)
+    ),url(images/backgroundabout.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.abouttext {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutcol {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.aboutcol img {
+    width: 100%;
+}
+.aboutcol h1 {
+    padding-top: 0;
+}
+.aboutcol p {
+    padding: 15px 0px 25px;
+}
+.aboutbtn {
+    border: 1px solid gold;
+    background: transparent;
+    color:gold;
+}
+.aboutbtn:hover {
+    color: white;
+}
+.maploc {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px
+}
+.maploc iframe {
+    width: 100%;
+}
+
+/*----------Contact HTML----------*/
+
+.contactheader {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)
+    ),url(images/backgroundcontact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contactform {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+.contactcol {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactcol div {   
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contactcol div p {
+    padding: 0;
+}
+.contactcol div h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.contactcol input, .contactcol textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid gold;
+}
+
+/*----------Collection HTML----------*/
+
+.collectionheader {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)
+    ),url(images/backgroundcollection.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imgs {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------Honda Collection----------*/
+
+.imgbox:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.imgbox {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/Honda/h1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.imgbox:nth-child(2) {
+    background: url(images/Honda/h2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgbox:nth-child(3) {
+    background: url(images/Honda/h3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgbox:nth-child(4) {
+    background: url(images/Honda/h4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgbox:nth-child(5) {
+    background: url(images/Honda/h5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------Nissan Collection----------*/
+
+.imgboxx:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.imgboxx {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/Nissan/n1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.imgboxx:nth-child(2) {
+    background: url(images/Nissan/n2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxx:nth-child(3) {
+    background: url(images/Nissan/n3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxx:nth-child(4) {
+    background: url(images/Nissan/n4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxx:nth-child(5) {
+    background: url(images/Nissan/n5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------Toyota Collection----------*/
+
+.imgboxxx:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.imgboxxx {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/Toyota/t1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.imgboxxx:nth-child(2) {
+    background: url(images/Toyota/t2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxxx:nth-child(3) {
+    background: url(images/Toyota/t3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxxx:nth-child(4) {
+    background: url(images/Toyota/t4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgboxxx:nth-child(5) {
+    background: url(images/Toyota/t5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*NewFeed*/
+
+.news-feed {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .news-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .news-item img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .news-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-text h3 {
+    margin-top: 0;
+  }
+  
+  .read-more {
+    color: #0066CC;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  
